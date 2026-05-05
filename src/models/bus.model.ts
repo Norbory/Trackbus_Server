@@ -1,0 +1,44 @@
+import { Bus } from "./types";
+
+export const busesData: Bus[] = [
+  {
+    id: 1,
+    placa: "ABC-419",
+    latitud: 19.300142,
+    longitud: -99.158711,
+    id_ruta: "sur",
+    conductor: "Juan Perez",
+    capacidad: 16,
+    estado: "activo",
+  },
+  {
+    id: 2,
+    placa: "TRK-258",
+    latitud: 19.334902,
+    longitud: -99.136519,
+    id_ruta: "norte",
+    conductor: "Maria Lopez",
+    capacidad: 20,
+    estado: "activo",
+  },
+  {
+    id: 3,
+    placa: "QWE-774",
+    latitud: 19.309554,
+    longitud: -99.149601,
+    id_ruta: "centro",
+    conductor: "Carlos Diaz",
+    capacidad: 18,
+    estado: "mantenimiento",
+  },
+  {
+    id: 4,
+    placa: "MNO-913",
+    latitud: 19.292331,
+    longitud: -99.165984,
+    id_ruta: "este",
+    conductor: "Ana Ruiz",
+    capacidad: 14,
+    estado: "inactivo",
+  },
+];

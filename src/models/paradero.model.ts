@@ -1,0 +1,32 @@
+import { Paradero } from "./types";
+
+export const paraderosData: Paradero[] = [
+  {
+    id: 1,
+    nombre: "Terminal Sur",
+    latitud: 19.289102,
+    longitud: -99.171203,
+    esInicial: true,
+  },
+  {
+    id: 2,
+    nombre: "Plaza Central",
+    latitud: 19.301447,
+    longitud: -99.155992,
+    esInicial: false,
+  },
+  {
+    id: 3,
+    nombre: "Hospital General",
+    latitud: 19.314618,
+    longitud: -99.148531,
+    esInicial: false,
+  },
+  {
+    id: 4,
+    nombre: "Terminal Norte",
+    latitud: 19.336281,
+    longitud: -99.131404,
+    esInicial: true,
+  },
+];
