@@ -1,0 +1,39 @@
+erDiagram
+    RUTA ||--o{ BUS : tiene
+    RUTA ||--o{ VIAJE : clasifica
+    BUS ||--o{ VIAJE : registra
+    PARADERO ||--o{ VIAJE : recibe
+
+    RUTA {
+        string id PK
+        string nombre
+        string origen
+        string destino
+    }
+
+    BUS {
+        int id PK
+        string placa
+        float latitud
+        float longitud
+        string id_ruta FK
+        string conductor
+        int capacidad
+        string estado
+    }
+
+    PARADERO {
+        int id PK
+        string nombre
+        float latitud
+        float longitud
+        boolean esInicial
+    }
+
+    VIAJE {
+        int id PK
+        int id_paradero FK
+        int id_bus FK
+        string id_ruta FK
+        datetime fec_actu
+    }
