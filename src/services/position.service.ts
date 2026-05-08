@@ -1,106 +1,86 @@
+import * as http from "http";
+import { IncomingMessage } from "http";
 import { Response } from "express";
-import mqtt, { MqttClient } from "mqtt";
+import { WebSocket, WebSocketServer } from "ws";
 import { env } from "../config/env";
 import { BusPosition } from "../models/types";
 
 let lastPosition: BusPosition | null = null;
 const sseClients = new Set<Response>();
-let mqttClient: MqttClient | null = null;
 
-if (!env.mqttMock) {
-  mqttClient = mqtt.connect(env.mqttUrl);
+export function createGpsWebSocketServer(server: http.Server): WebSocketServer {
+  const wss = new WebSocketServer({ server, path: "/ws/gps" });
 
-  mqttClient.on("connect", () => {
-    console.log(`[MQTT] Conectado a ${env.mqttUrl}`);
+  wss.on("connection", (ws: WebSocket, req: IncomingMessage) => {
+    const ip = req.socket.remoteAddress;
+    console.log(`[WS-GPS] Dispositivo conectado desde ${ip}`);
 
-    mqttClient?.subscribe(env.mqttPositionResponseTopic, (error) => {
-      if (error) {
-        console.error("[MQTT] Error al suscribirse:", error.message);
-        return;
+    ws.on("message", (data) => {
+      try {
+        const rawData = JSON.parse(data.toString()) as Partial<BusPosition>;
+
+        if (
+          typeof rawData.latitude !== "number" ||
+          typeof rawData.longitude !== "number"
+        ) {
+          console.warn("[WS-GPS] Mensaje ignorado: faltan coordenadas validas");
+          return;
+        }
+
+        const position: BusPosition = {
+          busId: rawData.busId ?? env.trackedBusId,
+          latitude: rawData.latitude,
+          longitude: rawData.longitude,
+          speedKmh: rawData.speedKmh,
+          heading: rawData.heading,
+          timestamp: rawData.timestamp ?? new Date().toISOString(),
+        };
+
+        lastPosition = position;
+        broadcastPosition(position);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        console.error("[WS-GPS] No se pudo parsear mensaje JSON:", message);
       }
+    });
 
-      console.log(`[MQTT] Suscrito a ${env.mqttPositionResponseTopic}`);
+    ws.on("close", () => {
+      console.log("[WS-GPS] Dispositivo desconectado");
+    });
+
+    ws.on("error", (error) => {
+      console.error("[WS-GPS] Error:", error.message);
     });
   });
 
-  mqttClient.on("reconnect", () => {
-    console.log("[MQTT] Reintentando conexion...");
-  });
-
-  mqttClient.on("error", (error) => {
-    console.error("[MQTT] Error:", error.message);
-  });
-
-  mqttClient.on("message", (topic, payload) => {
-    if (topic !== env.mqttPositionResponseTopic) {
-      return;
-    }
-
-    try {
-      const rawData = JSON.parse(payload.toString()) as Partial<BusPosition>;
-
-      if (
-        typeof rawData.latitude !== "number" ||
-        typeof rawData.longitude !== "number"
-      ) {
-        console.warn("[MQTT] Mensaje ignorado: faltan coordenadas validas");
-        return;
-      }
-
-      const position: BusPosition = {
-        busId: rawData.busId ?? env.trackedBusId,
-        latitude: rawData.latitude,
-        longitude: rawData.longitude,
-        speedKmh: rawData.speedKmh,
-        heading: rawData.heading,
-        timestamp: rawData.timestamp ?? new Date().toISOString(),
-      };
-
-      lastPosition = position;
-      broadcastPosition(position);
-    } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
-      console.error("[MQTT] No se pudo parsear mensaje JSON:", message);
-    }
-  });
-} else {
-  console.log("[MQTT] Modo maqueta activo: sin conexion a broker");
+  return wss;
 }
 
-export function startPositionPolling(): void {
-  setInterval(requestPositionFromBroker, 5000);
-  requestPositionFromBroker();
+export function startMockPositionPolling(): void {
+  if (!env.gpsMock) return;
+  setInterval(generateAndBroadcastMock, 5000);
+  generateAndBroadcastMock();
 }
 
-function requestPositionFromBroker(): void {
-  if (env.mqttMock) {
-    const mockPosition = generateMockPosition();
-    lastPosition = mockPosition;
-    broadcastPosition(mockPosition);
-    return;
-  }
-
-  const requestPayload = JSON.stringify({
-    busId: env.trackedBusId,
-    requestedAt: new Date().toISOString(),
-  });
-
-  mqttClient?.publish(env.mqttPositionRequestTopic, requestPayload, (error) => {
-    if (error) {
-      console.error("[MQTT] Error al solicitar posicion:", error.message);
-    }
-  });
+function generateAndBroadcastMock(): void {
+  const position = generateMockPosition();
+  lastPosition = position;
+  broadcastPosition(position);
 }
 
 function generateMockPosition(): BusPosition {
-  const baseLat = 19.3209;
-  const baseLng = -99.1522;
-  const drift = (Math.random() - 0.5) * 0.003;
+  const baseLat = -12.0569;
+  const baseLng = -77.0849;
+  const latVariance = 0.0007;
+  const lngVariance = 0.0007;
+
+  const latDrift = (Math.random() - 0.5) * latVariance;
+  const lngDrift = (Math.random() - 0.5) * lngVariance;
 
   return {
     busId: env.trackedBusId,
-    latitude: Number((baseLat + drift).toFixed(6)),
-    longitude: Number((baseLng + drift).toFixed(6)),
+    latitude: Number((baseLat + latDrift).toFixed(6)),
+    longitude: Number((baseLng + lngDrift).toFixed(6)),
     speedKmh: Math.round(15 + Math.random() * 25),
     heading: Math.round(Math.random() * 359),
     timestamp: new Date().toISOString(),
@@ -121,11 +101,10 @@ export function getLatestPosition(): BusPosition | null {
 
 export function getRealtimeMeta() {
   return {
-    source: env.mqttMock ? "mqtt-mock" : "mqtt",
-    requestTopic: env.mqttPositionRequestTopic,
-    responseTopic: env.mqttPositionResponseTopic,
-    pollIntervalMs: 5000,
-    mqttMock: env.mqttMock,
+    source: env.gpsMock ? "gps-mock" : "websocket",
+    gpsEndpoint: "/ws/gps",
+    pollIntervalMs: env.gpsMock ? 5000 : null,
+    gpsMock: env.gpsMock,
     latestPosition: lastPosition,
   };
 }

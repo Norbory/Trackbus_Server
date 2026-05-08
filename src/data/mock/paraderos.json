@@ -1,30 +1,32 @@
 [
   {
     "id": 1,
-    "nombre": "Terminal Sur",
-    "latitud": 19.289102,
-    "longitud": -99.171203,
-    "esInicial": true
+    "latitude": -12.058879,
+    "longitude": -77.080964,
+    "nombre": "Inicio del recorrido"
   },
   {
     "id": 2,
-    "nombre": "Plaza Central",
-    "latitud": 19.301447,
-    "longitud": -99.155992,
-    "esInicial": false
+    "latitude": -12.056867,
+    "longitude": -77.088174,
+    "nombre": "Mecanica de Fluidos"
   },
   {
     "id": 3,
-    "nombre": "Hospital General",
-    "latitud": 19.314618,
-    "longitud": -99.148531,
-    "esInicial": false
+    "latitude": -12.053713,
+    "longitude": -77.085594,
+    "nombre": "Facultad de Odontologia"
   },
   {
     "id": 4,
-    "nombre": "Terminal Norte",
-    "latitud": 19.336281,
-    "longitud": -99.131404,
-    "esInicial": true
+    "latitude": -12.056209,
+    "longitude": -77.084994,
+    "nombre": "Facultad de Medicina"
+  },
+  {
+    "id": 5,
+    "latitude": -12.054567,
+    "longitude": -77.082345,
+    "nombre": "Facultad de Informatica"
   }
 ]

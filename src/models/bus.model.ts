@@ -4,8 +4,8 @@ export const busesData: Bus[] = [
   {
     id: 1,
     placa: "ABC-419",
-    latitud: 19.300142,
-    longitud: -99.158711,
+    latitud: -12.057812,
+    longitud: -77.082041,
     id_ruta: "sur",
     conductor: "Juan Perez",
     capacidad: 16,
@@ -14,8 +14,8 @@ export const busesData: Bus[] = [
   {
     id: 2,
     placa: "TRK-258",
-    latitud: 19.334902,
-    longitud: -99.136519,
+    latitud: -12.056102,
+    longitud: -77.087214,
     id_ruta: "norte",
     conductor: "Maria Lopez",
     capacidad: 20,
@@ -24,8 +24,8 @@ export const busesData: Bus[] = [
   {
     id: 3,
     placa: "QWE-774",
-    latitud: 19.309554,
-    longitud: -99.149601,
+    latitud: -12.054238,
+    longitud: -77.085102,
     id_ruta: "centro",
     conductor: "Carlos Diaz",
     capacidad: 18,
@@ -34,8 +34,8 @@ export const busesData: Bus[] = [
   {
     id: 4,
     placa: "MNO-913",
-    latitud: 19.292331,
-    longitud: -99.165984,
+    latitud: -12.056944,
+    longitud: -77.084321,
     id_ruta: "este",
     conductor: "Ana Ruiz",
     capacidad: 14,
