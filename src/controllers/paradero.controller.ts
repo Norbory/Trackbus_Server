@@ -1,8 +1,9 @@
 import { Request, Response } from "express";
-import { paraderosData } from "../models/paradero.model";
+import paraderosData from "../data/mock/paraderos.json";
+import { Paradero } from "../models/types";
 
 export function getParaderos(_req: Request, res: Response): void {
-  res.json(paraderosData);
+  res.json(paraderosData as Paradero[]);
 }
 
 export function getParaderoById(req: Request, res: Response): void {
@@ -13,7 +14,7 @@ export function getParaderoById(req: Request, res: Response): void {
     return;
   }
 
-  const paradero = paraderosData.find((item) => item.id === id);
+  const paradero = (paraderosData as Paradero[]).find((item) => item.id === id);
 
   if (!paradero) {
     res.status(404).json({ message: "Paradero no encontrado" });

@@ -1,32 +1,1202 @@
-[
+[ 
   {
     "id": 1,
-    "latitude": -12.058879,
-    "longitude": -77.080964,
-    "nombre": "Inicio del recorrido"
+    "latitude": -11.914099369198643,
+    "longitude": -77.03959845079054,
+    "nombre": "Paradero Inicial H. Collique",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 1,
+    "esInicial": true
   },
   {
     "id": 2,
-    "latitude": -12.056867,
-    "longitude": -77.088174,
-    "nombre": "Mecanica de Fluidos"
+    "latitude": -11.901041120233662,
+    "longitude": -77.03937679414727,
+    "nombre": "Paradero San Felipe",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 2,
+    "esInicial": false
   },
   {
     "id": 3,
-    "latitude": -12.053713,
-    "longitude": -77.085594,
-    "nombre": "Facultad de Odontologia"
+    "latitude": -11.914596164241708,
+    "longitude": -77.0477091868305,
+    "nombre": "Paradero Los Incas",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 3,
+    "esInicial": false
   },
   {
     "id": 4,
-    "latitude": -12.056209,
-    "longitude": -77.084994,
-    "nombre": "Facultad de Medicina"
+    "latitude": -11.925431737530754,
+    "longitude": -77.05214510154266,
+    "nombre": "Paradero Jamaica",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 4,
+    "esInicial": false
   },
   {
     "id": 5,
-    "latitude": -12.054567,
-    "longitude": -77.082345,
-    "nombre": "Facultad de Informatica"
+    "latitude": -11.929689294497507,
+    "longitude": -77.05361724801122,
+    "nombre": "Paradero Micaela Bastidas",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 5,
+    "esInicial": false
+  },
+  {
+    "id": 6,
+    "latitude": -11.934388083426972,
+    "longitude": -77.05620361023118,
+    "nombre": "Paradero Metro de Belaunde",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 6,
+    "esInicial": false
+  },
+  {
+    "id": 7,
+    "latitude": -11.94195494624107,
+    "longitude": -77.06033433368997,
+    "nombre": "Paradero Seguro (G. de la Fuente)",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 7,
+    "esInicial": false
+  },
+  {
+    "id": 8,
+    "latitude": -11.945415364207728,
+    "longitude": -77.06092568104599,
+    "nombre": "Paradero 22 de Agosto",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 8,
+    "esInicial": false
+  },
+  {
+    "id": 9,
+    "latitude": -11.95511867552436,
+    "longitude": -77.06004127923332,
+    "nombre": "Paradero Mexico",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 9,
+    "esInicial": false
+  },
+  {
+    "id": 10,
+    "latitude": -11.963458788314373,
+    "longitude": -77.07141785227134,
+    "nombre": "Paradero Villa Sol",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 10,
+    "esInicial": false
+  },
+  {
+    "id": 11,
+    "latitude": -11.977478240528274,
+    "longitude": -77.07765377884304,
+    "nombre": "Paradero Naranjal",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 11,
+    "esInicial": false
+  },
+  {
+    "id": 12,
+    "latitude": -11.984058538200596,
+    "longitude": -77.07877622261843,
+    "nombre": "Paradero Alisos",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 12,
+    "esInicial": false
+  },
+  {
+    "id": 13,
+    "latitude": -11.990342013975352,
+    "longitude": -77.0822374949729,
+    "nombre": "Paradero Izaguirre",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 13,
+    "esInicial": false
+  },
+  {
+    "id": 14,
+    "latitude": -12.000830479127222,
+    "longitude": -77.09126116840993,
+    "nombre": "Paradero Las Vaquitas",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 14,
+    "esInicial": false
+  },
+  {
+    "id": 15,
+    "latitude": -12.054318255590546,
+    "longitude": -77.08372461425424,
+    "nombre": "Ciudad Universitaria",
+    "id_ruta": "norte",
+    "sentido": "ida",
+    "orden": 15,
+    "esInicial": false
+  },
+  {
+    "id": 16,
+    "latitude": -12.051907362059863,
+    "longitude": -77.08767740149327,
+    "nombre": "Ciudad Universitaria",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 1,
+    "esInicial": true
+  },
+  {
+    "id": 17,
+    "latitude": -12.03209075785273,
+    "longitude": -77.0775185239397,
+    "nombre": "Paradero Av Peru",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 2,
+    "esInicial": false
+  },
+  {
+    "id": 18,
+    "latitude": -12.026129614487033,
+    "longitude": -77.07523753847764,
+    "nombre": "Paradero Jose Granda",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 3,
+    "esInicial": false
+  },
+  {
+    "id": 19,
+    "latitude": -12.019830835774815,
+    "longitude": -77.07583680676352,
+    "nombre": "Paradero San German",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 4,
+    "esInicial": false
+  },
+  {
+    "id": 20,
+    "latitude": -12.013209209788606,
+    "longitude": -77.07935261415915,
+    "nombre": "Paradero Tomas Valle",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 5,
+    "esInicial": false
+  },
+  {
+    "id": 21,
+    "latitude": -12.007371892367098,
+    "longitude": -77.08217188523348,
+    "nombre": "Paradero Angelica Gamarra",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 6,
+    "esInicial": false
+  },
+  {
+    "id": 22,
+    "latitude": -11.996370697729223,
+    "longitude": -77.0845190774931,
+    "nombre": "Paradero Mayolo",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 7,
+    "esInicial": false
+  },
+  {
+    "id": 23,
+    "latitude": -11.991692449494895,
+    "longitude": -77.08183341216302,
+    "nombre": "Paradero Izaguirre",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 8,
+    "esInicial": false
+  },
+  {
+    "id": 24,
+    "latitude": -11.983603063881977,
+    "longitude": -77.07824875286055,
+    "nombre": "Paradero Alisos",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 9,
+    "esInicial": false
+  },
+  {
+    "id": 25,
+    "latitude": -11.978420783022543,
+    "longitude": -77.07682496095414,
+    "nombre": "Paradero Naranjal",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 10,
+    "esInicial": false
+  },
+  {
+    "id": 26,
+    "latitude": -11.972302759883583,
+    "longitude": -77.07567527353417,
+    "nombre": "Paradero Marañon",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 11,
+    "esInicial": false
+  },
+  {
+    "id": 27,
+    "latitude": -11.964119333593315,
+    "longitude": -77.07172493415844,
+    "nombre": "Paradero Villa Sol",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 12,
+    "esInicial": false
+  },
+  {
+    "id": 28,
+    "latitude": -11.962154409673255,
+    "longitude": -77.06505294769774,
+    "nombre": "Paradero UCH",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 13,
+    "esInicial": false
+  },
+  {
+    "id": 29,
+    "latitude": -11.955731463910574,
+    "longitude": -77.05978911586577,
+    "nombre": "Paradero Mexico",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 14,
+    "esInicial": false
+  },
+  {
+    "id": 30,
+    "latitude": -11.946457768098234,
+    "longitude": -77.06042475471021,
+    "nombre": "Paradero 22 de Agosto",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 15,
+    "esInicial": false
+  },
+  {
+    "id": 31,
+    "latitude": -11.942682070829633,
+    "longitude": -77.0602935420692,
+    "nombre": "Paradero Seguro",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 16,
+    "esInicial": false
+  },
+  {
+    "id": 32,
+    "latitude": -11.93534652338502,
+    "longitude": -77.05636139685947,
+    "nombre": "Paradero Metro Belaunde",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 17,
+    "esInicial": false
+  },
+  {
+    "id": 33,
+    "latitude": -11.930409839898473,
+    "longitude": -77.05365088876746,
+    "nombre": "Paradero Micaela Bastidas",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 18,
+    "esInicial": false
+  },
+  {
+    "id": 34,
+    "latitude": -11.926213042350087,
+    "longitude": -77.05203496829093,
+    "nombre": "Paradero Jamaica",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 19,
+    "esInicial": false
+  },
+  {
+    "id": 35,
+    "latitude": -11.915448848525857,
+    "longitude": -77.04785901502889,
+    "nombre": "Paradero Los Incas",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 20,
+    "esInicial": false
+  },
+  {
+    "id": 36,
+    "latitude": -11.903425674516775,
+    "longitude": -77.03821793715754,
+    "nombre": "Paradero Av. Lima",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 21,
+    "esInicial": false
+  },
+  {
+    "id": 61,
+    "latitude": -11.901020270137153,
+    "longitude": -77.03938335609614,
+    "nombre": "Paradero San Felipe (Final)",
+    "id_ruta": "norte",
+    "sentido": "vuelta",
+    "orden": 22,
+    "esInicial": false
+  },
+  {
+    "id": 37,
+    "latitude": -12.158894194420245,
+    "longitude": -76.9593686592977,
+    "nombre": "Paradero Inicial",
+    "id_ruta": "sur",
+    "sentido": "ida",
+    "orden": 1,
+    "esInicial": true
+  },
+  {
+    "id": 38,
+    "latitude": -12.07438092880932,
+    "longitude": -77.03566207787088,
+    "nombre": "Paradero Arequipa",
+    "id_ruta": "sur",
+    "sentido": "ida",
+    "orden": 2,
+    "esInicial": false
+  },
+  {
+    "id": 39,
+    "latitude": -12.061293889044128,
+    "longitude": -77.08586652651488,
+    "nombre": "Ciudad Universitaria",
+    "id_ruta": "sur",
+    "sentido": "ida",
+    "orden": 3,
+    "esInicial": false
+  },
+  {
+    "id": 40,
+    "latitude": -12.061250658417967,
+    "longitude": -77.08587858283185,
+    "nombre": "Ciudad Universitaria",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 1,
+    "esInicial": true
+  },
+  {
+    "id": 41,
+    "latitude": -12.077357911066612,
+    "longitude": -77.08444258221999,
+    "nombre": "Paradero Plaza San Miguel",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 2,
+    "esInicial": false
+  },
+  {
+    "id": 42,
+    "latitude": -12.083130228775639,
+    "longitude": -77.06761858144884,
+    "nombre": "Paradero Sucre",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 3,
+    "esInicial": false
+  },
+  {
+    "id": 43,
+    "latitude": -12.087244627483125,
+    "longitude": -77.06218746570948,
+    "nombre": "Paradero Hospital Militar",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 4,
+    "esInicial": false
+  },
+  {
+    "id": 44,
+    "latitude": -12.09447689660059,
+    "longitude": -77.05120389976173,
+    "nombre": "Paradero Javier Prado",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 5,
+    "esInicial": false
+  },
+  {
+    "id": 45,
+    "latitude": -12.103227576085903,
+    "longitude": -77.0386947043824,
+    "nombre": "Paradero Camino Real",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 6,
+    "esInicial": false
+  },
+  {
+    "id": 46,
+    "latitude": -12.104521358218241,
+    "longitude": -77.03149011270686,
+    "nombre": "Paradero Av. Arequipa",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 7,
+    "esInicial": false
+  },
+  {
+    "id": 47,
+    "latitude": -12.103931515020179,
+    "longitude": -77.027803279966,
+    "nombre": "Paradero Via Expresa",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 8,
+    "esInicial": false
+  },
+  {
+    "id": 48,
+    "latitude": -12.108404316393957,
+    "longitude": -77.02675668269725,
+    "nombre": "Paradero Estacion Orue",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 9,
+    "esInicial": false
+  },
+  {
+    "id": 49,
+    "latitude": -12.108035153296985,
+    "longitude": -77.02452919905843,
+    "nombre": "Paradero Republica de Panama",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 10,
+    "esInicial": false
+  },
+  {
+    "id": 50,
+    "latitude": -12.107410584902274,
+    "longitude": -77.02291383940833,
+    "nombre": "Paradero Angamos",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 11,
+    "esInicial": false
+  },
+  {
+    "id": 51,
+    "latitude": -12.105832850533622,
+    "longitude": -77.01870135994534,
+    "nombre": "Paradero Manuel Villaran",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 12,
+    "esInicial": false
+  },
+  {
+    "id": 52,
+    "latitude": -12.112204963461599,
+    "longitude": -77.01245742881716,
+    "nombre": "Paradero Estacion Ayacucho",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 13,
+    "esInicial": false
+  },
+  {
+    "id": 53,
+    "latitude": -12.121764262669746,
+    "longitude": -77.0060045064839,
+    "nombre": "Paradero Av. Las Lomas",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 14,
+    "esInicial": false
+  },
+  {
+    "id": 54,
+    "latitude": -12.1345732191772,
+    "longitude": -76.99732469873071,
+    "nombre": "Paradero Bolichera",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 15,
+    "esInicial": false
+  },
+  {
+    "id": 55,
+    "latitude": -12.145379540200029,
+    "longitude": -76.98877948176991,
+    "nombre": "Paradero Estacion Atocongo",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 16,
+    "esInicial": false
+  },
+  {
+    "id": 56,
+    "latitude": -12.14759249851783,
+    "longitude": -76.98669856212938,
+    "nombre": "Paradero Ciudad de Dios",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 17,
+    "esInicial": false
+  },
+  {
+    "id": 57,
+    "latitude": -12.151020383192092,
+    "longitude": -76.97992005743566,
+    "nombre": "Paradero Estacion San Juan",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 18,
+    "esInicial": false
+  },
+  {
+    "id": 58,
+    "latitude": -12.153012434705856,
+    "longitude": -76.97477552636032,
+    "nombre": "Paradero Final H. M. Aux",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 19,
+    "esInicial": false
+  },
+  {
+    "id": 59,
+    "latitude": -12.156774394521637,
+    "longitude": -76.96560319742936,
+    "nombre": "Punto Sur Regreso 20",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 20,
+    "esInicial": false
+  },
+  {
+    "id": 60,
+    "latitude": -12.159409181649695,
+    "longitude": -76.95907276702924,
+    "nombre": "Punto Sur Regreso 21",
+    "id_ruta": "sur",
+    "sentido": "vuelta",
+    "orden": 21,
+    "esInicial": false
+  },
+  {
+    "id": 62,
+    "latitude": -12.051897509282737,
+    "longitude": -77.087648209583,
+    "nombre": "Ciudad Universitaria",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 1,
+    "esInicial": true
+  },
+  {
+    "id": 63,
+    "latitude": -12.050822908608376,
+    "longitude": -77.04337988629278,
+    "nombre": "Paradero Alfonso Ugarte",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 2,
+    "esInicial": false
+  },
+  {
+    "id": 64,
+    "latitude": -12.03245989433398,
+    "longitude": -77.02801706103845,
+    "nombre": "Paradero Alcazar",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 3,
+    "esInicial": false
+  },
+  {
+    "id": 65,
+    "latitude": -12.028561327786667,
+    "longitude": -77.01204766653431,
+    "nombre": "Paradero Estacion Caja de Agua",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 4,
+    "esInicial": false
+  },
+  {
+    "id": 66,
+    "latitude": -12.018293177006019,
+    "longitude": -77.00266244484544,
+    "nombre": "Paradero Piramides del Sol",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 5,
+    "esInicial": false
+  },
+  {
+    "id": 67,
+    "latitude": -12.013496484565072,
+    "longitude": -77.00179311957305,
+    "nombre": "Paradero Celima Tusilagos",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 6,
+    "esInicial": false
+  },
+  {
+    "id": 68,
+    "latitude": -12.006165154137049,
+    "longitude": -77.00562523402886,
+    "nombre": "Paradero Metro Los Jardines",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 7,
+    "esInicial": false
+  },
+  {
+    "id": 69,
+    "latitude": -12.000009370503859,
+    "longitude": -77.0087218461661,
+    "nombre": "Paradero Las Amatistas",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 8,
+    "esInicial": false
+  },
+  {
+    "id": 70,
+    "latitude": -11.997534715792774,
+    "longitude": -77.00940213825618,
+    "nombre": "Paradero Los Postes",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 9,
+    "esInicial": false
+  },
+  {
+    "id": 71,
+    "latitude": -11.990156755531043,
+    "longitude": -77.0106498373186,
+    "nombre": "Paradero 20",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 10,
+    "esInicial": false
+  },
+  {
+    "id": 72,
+    "latitude": -11.986154292276868,
+    "longitude": -77.00320710450883,
+    "nombre": "Paradero Av. El Sol",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 11,
+    "esInicial": false
+  },
+  {
+    "id": 73,
+    "latitude": -11.9848042705688,
+    "longitude": -77.00629046818952,
+    "nombre": "Paradero Final Estacion San Carlos",
+    "id_ruta": "este",
+    "sentido": "vuelta",
+    "orden": 12,
+    "esInicial": false
+  },
+  {
+    "id": 74,
+    "latitude": -11.984506794860522,
+    "longitude": -77.00732591685203,
+    "nombre": "Paradero Inicial Estacion San Carlos",
+    "id_ruta": "este",
+    "sentido": "ida",
+    "orden": 1,
+    "esInicial": true
+  },
+  {
+    "id": 75,
+    "latitude": -11.995977749500192,
+    "longitude": -77.00531224449236,
+    "nombre": "Paradero Los Postes",
+    "id_ruta": "este",
+    "sentido": "ida",
+    "orden": 2,
+    "esInicial": false
+  },
+  {
+    "id": 76,
+    "latitude": -12.003671431210702,
+    "longitude": -77.00271787853556,
+    "nombre": "Paradero Los Jardines",
+    "id_ruta": "este",
+    "sentido": "ida",
+    "orden": 3,
+    "esInicial": false
+  },
+  {
+    "id": 77,
+    "latitude": -12.022236190682843,
+    "longitude": -76.99148940920497,
+    "nombre": "Paradero Sodimac Las Lomas",
+    "id_ruta": "este",
+    "sentido": "ida",
+    "orden": 4,
+    "esInicial": false
+  },
+  {
+    "id": 78,
+    "latitude": -12.026289937153601,
+    "longitude": -76.99142883002273,
+    "nombre": "Paradero Las Lomas",
+    "id_ruta": "este",
+    "sentido": "ida",
+    "orden": 5,
+    "esInicial": false
+  },
+  {
+    "id": 79,
+    "latitude": -12.041540478139448,
+    "longitude": -76.99754982420072,
+    "nombre": "Paradero Ovalo La Paz",
+    "id_ruta": "este",
+    "sentido": "ida",
+    "orden": 6,
+    "esInicial": false
+  },
+  {
+    "id": 80,
+    "latitude": -12.05077563453445,
+    "longitude": -77.00584417434159,
+    "nombre": "Paradero Chiquian",
+    "id_ruta": "este",
+    "sentido": "ida",
+    "orden": 7,
+    "esInicial": false
+  },
+  {
+    "id": 81,
+    "latitude": -12.053480601450136,
+    "longitude": -77.012274475174,
+    "nombre": "Paradero Estacion Grau",
+    "id_ruta": "este",
+    "sentido": "ida",
+    "orden": 8,
+    "esInicial": false
+  },
+  {
+    "id": 82,
+    "latitude": -12.061264132684586,
+    "longitude": -77.08582952882638,
+    "nombre": "Ciudad Universitaria",
+    "id_ruta": "este",
+    "sentido": "ida",
+    "orden": 9,
+    "esInicial": false
+  },
+  {
+    "id": 83,
+    "latitude": -12.038362238493052,
+    "longitude": -76.93138107094461,
+    "nombre": "Paradero Inicial Grifo Vista Alegre",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 1,
+    "esInicial": true
+  },
+  {
+    "id": 84,
+    "latitude": -12.046069086201623,
+    "longitude": -76.94372372528659,
+    "nombre": "Paradero Av. de La Cultura",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 2,
+    "esInicial": false
+  },
+  {
+    "id": 85,
+    "latitude": -12.05335230598194,
+    "longitude": -76.96220495129836,
+    "nombre": "Paradero Ovalo Santa Anita",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 3,
+    "esInicial": false
+  },
+  {
+    "id": 86,
+    "latitude": -12.057178837613185,
+    "longitude": -76.97067147816207,
+    "nombre": "Paradero Santa Rosa",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 4,
+    "esInicial": false
+  },
+  {
+    "id": 87,
+    "latitude": -12.072348977673245,
+    "longitude": -76.99261078093751,
+    "nombre": "Paradero Circunvalacion",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 5,
+    "esInicial": false
+  },
+  {
+    "id": 88,
+    "latitude": -12.077346583896942,
+    "longitude": -76.98952090572682,
+    "nombre": "Paradero Canada",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 6,
+    "esInicial": false
+  },
+  {
+    "id": 89,
+    "latitude": -12.082105622922832,
+    "longitude": -76.99697913884457,
+    "nombre": "Paradero San Luis",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 7,
+    "esInicial": false
+  },
+  {
+    "id": 90,
+    "latitude": -12.081430321159505,
+    "longitude": -77.02280947362837,
+    "nombre": "Paradero Av. Palermo",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 8,
+    "esInicial": false
+  },
+  {
+    "id": 91,
+    "latitude": -12.075514479375018,
+    "longitude": -77.03549074332675,
+    "nombre": "Paradero Av. Arequipa",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 9,
+    "esInicial": false
+  },
+  {
+    "id": 92,
+    "latitude": -12.06751788961653,
+    "longitude": -77.067370256147,
+    "nombre": "Paradero Av. La Alborada",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 10,
+    "esInicial": false
+  },
+  {
+    "id": 93,
+    "latitude": -12.061285278262142,
+    "longitude": -77.0858702723297,
+    "nombre": "Ciudad Universitaria",
+    "id_ruta": "centro",
+    "sentido": "ida",
+    "orden": 11,
+    "esInicial": false
+  },
+  {
+    "id": 94,
+    "latitude": -12.057395474607198,
+    "longitude": -77.08339282183996,
+    "nombre": "Ciudad Universitaria",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 1,
+    "esInicial": true
+  },
+  {
+    "id": 95,
+    "latitude": -12.071719965939536,
+    "longitude": -77.06195495025658,
+    "nombre": "Paradero Sucre",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 2,
+    "esInicial": false
+  },
+  {
+    "id": 96,
+    "latitude": -12.0736146928966,
+    "longitude": -77.05587039489487,
+    "nombre": "Paradero del Rio",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 3,
+    "esInicial": false
+  },
+  {
+    "id": 97,
+    "latitude": -12.074910576215864,
+    "longitude": -77.05411945833143,
+    "nombre": "Paradero Av. Brasil",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 4,
+    "esInicial": false
+  },
+  {
+    "id": 98,
+    "latitude": -12.075868431715602,
+    "longitude": -77.05284814420673,
+    "nombre": "Paradero Garzon",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 5,
+    "esInicial": false
+  },
+  {
+    "id": 99,
+    "latitude": -12.077130832455508,
+    "longitude": -77.05127543577125,
+    "nombre": "Paradero Urteaga",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 6,
+    "esInicial": false
+  },
+  {
+    "id": 100,
+    "latitude": -12.078430211736242,
+    "longitude": -77.04969114081966,
+    "nombre": "Paradero Hiuracocha",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 7,
+    "esInicial": false
+  },
+  {
+    "id": 101,
+    "latitude": -12.079476450914923,
+    "longitude": -77.04677091140462,
+    "nombre": "Paradero Mello Franco",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 8,
+    "esInicial": false
+  },
+  {
+    "id": 102,
+    "latitude": -12.07998504954989,
+    "longitude": -77.04281828296635,
+    "nombre": "Paradero Salaverry",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 9,
+    "esInicial": false
+  },
+  {
+    "id": 103,
+    "latitude": -12.079899588346963,
+    "longitude": -77.03649099621764,
+    "nombre": "Paradero Arenales",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 10,
+    "esInicial": false
+  },
+  {
+    "id": 104,
+    "latitude": -12.079786362445407,
+    "longitude": -77.0354554249179,
+    "nombre": "Paradero Arequipa",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 11,
+    "esInicial": false
+  },
+  {
+    "id": 105,
+    "latitude": -12.079305503992133,
+    "longitude": -77.03219471343114,
+    "nombre": "Paradero Av. Militar",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 12,
+    "esInicial": false
+  },
+  {
+    "id": 106,
+    "latitude": -12.07733705481124,
+    "longitude": -77.02940070507134,
+    "nombre": "Paradero Via Expresa",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 13,
+    "esInicial": false
+  },
+  {
+    "id": 107,
+    "latitude": -12.075831440724784,
+    "longitude": -77.02561596551797,
+    "nombre": "Paradero Luna Pizarro",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 14,
+    "esInicial": false
+  },
+  {
+    "id": 108,
+    "latitude": -12.07497557334142,
+    "longitude": -77.02328745123246,
+    "nombre": "Paradero Palermo",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 15,
+    "esInicial": false
+  },
+  {
+    "id": 109,
+    "latitude": -12.072311285816518,
+    "longitude": -77.01189574527879,
+    "nombre": "Paradero Aviacion",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 16,
+    "esInicial": false
+  },
+  {
+    "id": 110,
+    "latitude": -12.075365130967091,
+    "longitude": -77.0112154544654,
+    "nombre": "Paradero Estacion Arriola",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 17,
+    "esInicial": false
+  },
+  {
+    "id": 111,
+    "latitude": -12.072183839941255,
+    "longitude": -77.00299877043734,
+    "nombre": "Paradero San Luis",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 18,
+    "esInicial": false
+  },
+  {
+    "id": 112,
+    "latitude": -12.0633526132924,
+    "longitude": -76.98291638335392,
+    "nombre": "Paradero Santa Luisa",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 19,
+    "esInicial": false
+  },
+  {
+    "id": 113,
+    "latitude": -12.061177698794758,
+    "longitude": -76.97892646204588,
+    "nombre": "Paradero Santa Rosa",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 20,
+    "esInicial": false
+  },
+  {
+    "id": 114,
+    "latitude": -12.057538589061956,
+    "longitude": -76.97088613438622,
+    "nombre": "Paradero Puente Santa Anita",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 21,
+    "esInicial": false
+  },
+  {
+    "id": 115,
+    "latitude": -12.055230124582549,
+    "longitude": -76.96561700830281,
+    "nombre": "Paradero Ovalo Santa Anita",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 22,
+    "esInicial": false
+  },
+  {
+    "id": 116,
+    "latitude": -12.053920597831095,
+    "longitude": -76.9625504702956,
+    "nombre": "Paradero Plaza Vea",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 23,
+    "esInicial": false
+  },
+  {
+    "id": 117,
+    "latitude": -12.051328775094037,
+    "longitude": -76.95644553113634,
+    "nombre": "Paradero Colectora Industrial",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 24,
+    "esInicial": false
+  },
+  {
+    "id": 118,
+    "latitude": -12.046617649048283,
+    "longitude": -76.94443299741451,
+    "nombre": "Paradero La Cultura",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 25,
+    "esInicial": false
+  },
+  {
+    "id": 119,
+    "latitude": -12.044130582800268,
+    "longitude": -76.93851132072191,
+    "nombre": "Paradero Separadora Industrial",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 26,
+    "esInicial": false
+  },
+  {
+    "id": 120,
+    "latitude": -12.038160519930582,
+    "longitude": -76.93178760198685,
+    "nombre": "Paradero Final Vista Alegre",
+    "id_ruta": "centro",
+    "sentido": "vuelta",
+    "orden": 27,
+    "esInicial": false
   }
 ]

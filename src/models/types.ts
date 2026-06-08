@@ -23,11 +23,16 @@ export type Ruta = {
   destino: string;
 };
 
+export type ParaderoSentido = "ida" | "vuelta";
+
 export type Paradero = {
   id: number;
   nombre: string;
   latitud: number;
   longitud: number;
+  idRuta: RutaId;
+  sentido: ParaderoSentido;
+  orden: number;
   esInicial: boolean;
 };
 
