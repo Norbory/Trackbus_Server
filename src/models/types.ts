@@ -1,5 +1,6 @@
 export type BusPosition = {
   busId: string;
+  id_ruta?: RutaId;
   latitude: number;
   longitude: number;
   speedKmh?: number;
